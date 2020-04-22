@@ -22,7 +22,8 @@ Will try and see how the original blagger sprites look once they are colourised.
 
 Here's the original Roger the Dodger:
 
-> @todo
+![Roger the Dodger](/resources/images/blagger_msx.gif)
+
 
 And here's the MSX enhanced version:
 
