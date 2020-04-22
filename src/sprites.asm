@@ -10,7 +10,7 @@ AnimateDemo             proc
 
                         ld a, (Sprites.AIndex)          ; For every 8th frame, read Sprite A's tile index,
                         inc a                           ; inc frame
-                        cp 4                            ; Compare end of frames
+                        cp 8                            ; Compare end of frames
                         jr nz Loop                      ; Not end don't reset
                         ld a, 0                          ; else reset frame
 Loop:                   ld (Sprites.AIndex), a          ; save the frame back
