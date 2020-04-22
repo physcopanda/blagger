@@ -13,7 +13,7 @@ AnimateDemo             proc
                         cp 4
                         jr nz Loop
                         ld (Sprites.AIndex), 0
-Loop
+Loop:
                         ret
 pend
 

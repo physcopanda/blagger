@@ -12,7 +12,7 @@ AnimateDemo             proc
                         inc a                           ; inc frame
                         cp 4                            ; Compare end of frames
                         jr nz Loop                      ; Not end don't reset
-                        lda 0                           ; else reset frame
+                        ld a, 0                          ; else reset frame
 Loop:                   ld (Sprites.AIndex), a          ; save the frame back
                         ret
 pend

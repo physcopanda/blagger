@@ -9,8 +9,11 @@ AnimateDemo             proc
                         ret nz                          ;   and return 7 out of every 8 frames.
 
                         ld a, (Sprites.AIndex)          ; For every 8th frame, read Sprite A's tile index,
-                        xor %00000001                   ;   alternate between (0 => 1 => 0 => 1=> etc),
-                        ld (Sprites.AIndex), a          ;   then save it back.
+                        inc a
+                        cp 4
+                        jr nz Loop
+                        ld (Sprites.AIndex), 0
+Loop
                         ret
 pend
 

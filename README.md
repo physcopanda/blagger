@@ -42,3 +42,6 @@ Here's my Nirvana+ colourised version:
 
 ![Roger the Dodger](/resources/images/blagger_nirvana.gif)
 
+OK - so as Roger is a software sprite - he will have 4 frames moving horizontally and this causes some slight niggles with the attribute zones which dont move so my nice burgendy loot sack may on some offsets take on the stripey outfit. I might have a go at repixeling it a little to see if I can make it look neater but we'll see.
+
+![Roger the Dodger](/resources/images/blagger_wtile.gif)
