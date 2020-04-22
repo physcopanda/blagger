@@ -1,12 +1,12 @@
 # Blagger - the last job
 
-ITS HERE!!!! The ZX Spectrum Next! And to celebrate this awesome beast - I'm going to have a crack at writting a game in Z80.
+ITS HERE!!!! [The ZX Spectrum Next!](https://www.specnext.com/) And to celebrate this awesome beast - I'm going to have a crack at writting a game in Z80.
 
 I've ported a game to the C64 using 6502 assembly before and more recently ported an old MSX game called Blagger into Gamemaker as a fun side project.
 
-So - this lead me to thinking... if I have the assets, with a little reworking I could being the original Blagger to the Spectrum. I've NO idea why it never happened before!
+So - this lead me to thinking... if I have the assets, with a little reworking I could bring the original Blagger to the Spectrum. I've NO idea why it never happened before!
 
-After playing a few new Spectrum games to see what the caliber of coding is like these days, I found the fantastic Manic Pietro and thought - that's how I want Blagger to look on the Next.
+After playing a few new Spectrum games to see what the caliber of coding is like these days, I found the fantastic [Manic Pietro](https://noentiendo.itch.io/manic-pietro) and thought - that's how I want Blagger to look on the Next.
 
 After some investigation - it turns out it uses a display engine called Nirvana+, so I set to the task of using the same engine to bring Blagger back for one last job!
 
