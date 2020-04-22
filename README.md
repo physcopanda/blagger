@@ -31,5 +31,5 @@ And here's the MSX enhanced version:
 
 Here's my Nirvana+ colourised version:
 
-> @todo
+![Roger the Dodger](/resources/images/blagger_nirvana.gif)
 
