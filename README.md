@@ -27,7 +27,7 @@ Here's the original Roger the Dodger:
 
 And here's the MSX enhanced version:
 
-> @todo
+![Roger the Dodger](/resources/images/blagger_enhanced_msx.gif)
 
 Here's my Nirvana+ colourised version:
 
