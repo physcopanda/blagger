@@ -1,6 +1,6 @@
 # Blagger - the last job
 
-ITS HERE!!!! [The ZX Spectrum Next!](https://www.specnext.com/) And to celebrate this awesome beast - I'm going to have a crack at writting a game in Z80.
+ITS HERE!!!! [The ZX Spectrum Next!](https://www.specnext.com/) And to celebrate this awesome beast - I'm going to have a crack at writting a game in Z80. It's the middle of a virus pandemic and we're all in lockdown so what a great way to pass the time!
 
 I've ported a game to the C64 using 6502 assembly before and more recently ported an old MSX game called Blagger into Gamemaker as a fun side project.
 
@@ -18,7 +18,8 @@ Using the [Zalaxa tutorials](https://seven-fff.com/blog/) to learn how to use th
 
 I've written this as a series of blog type articles for future use on our website.
 
-## Part 1 22nd April 2020
+## Part 1 - Blagging It!
+*22nd April 2020*
 
 Learning the tools
 
