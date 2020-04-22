@@ -21,9 +21,14 @@ For artwork I'm using ZX Paintbrush as it handles the btile format required by N
 Will try and see how the original blagger sprites look once they are colourised.
 
 Here's the original Roger the Dodger:
+
 > @todo
+
 And here's the MSX enhanced version:
+
 > @todo
+
 Here's my Nirvana+ colourised version:
+
 > @todo
 
