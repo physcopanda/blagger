@@ -6,11 +6,14 @@ AnimateDemo             proc
 
                         ld a, (FRAMES)                  ; Read the LSB of the ROM frame counter (0.255)
                         and %00000111                   ; Take the lowest 3 bits (effectively FRAMES modulus 8),
-                        ret nz                          ;   and return 7 out of every 8 frames.
+                        ret nz                          ; and return 7 out of every 8 frames.
 
-                        ld a, (MovePlayer.AnimOffset)   ; For every 8th frame, read player's tile offset,
-                        xor %00000100                   ;       alternate between (0 => 4 => 0 => 4 => etc),
-                        ld (MovePlayer.AnimOffset), a   ; SMC>  then save it back.
+                        ld a, (Sprites.AIndex)          ; For every 8th frame, read Sprite A's tile index,
+                        inc a                           ; inc frame
+                        cp 8                            ; Compare end of frames
+                        jr nz Loop                      ; Not end don't reset
+                        ld a, 0                          ; else reset frame
+Loop:                   ld (Sprites.AIndex), a          ; save the frame back
                         ret
 pend
 
@@ -78,6 +81,7 @@ AnimOffset equ $+1:     add a, SMC                      ; The X offset is return
                         ld (Sprites.BColumn), a         ; Set column for player sprite (current position)
                         ret
 pend
+
 
 CalculatePlayerX        proc                            ; X coordinate is passed in a (0.255)
                         ld b, a                         ; Save the X coordinate for later

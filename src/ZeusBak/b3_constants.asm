@@ -1,11 +1,13 @@
 ; constants.asm
 
-
+ENABLE_WIDE_SPRITE      equ true
+ENABLE_WIDE_DRAW        equ true
 
 ; Game
 Stack                   equ Start-1                     ; Put our stack right below the program
 BinPath                 equ ".\bin"                     ; Relative to main.asm
 TapFile                 equ BinPath+"\blagger.tap"      ; Filename of tap file
+SMC                     equ 0                           ; Semantic placeholder for operands that wil be self-modified
 
 
 

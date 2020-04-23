@@ -12,7 +12,17 @@ import_bin "..\tiles\blagger.btile"                    ; 000-005        1 x 6   
 
 pend
 
+WTile proc
+::WIDE_IMAGES:
+;                                                           BTile         Best
+;          FileName                                       Indices    Viewed As     Notes
+Monster equ ($-WTile)/Sprites.BTileLen
+import_bin "..\tiles\blagger.wtile"                     ; 000-007        4 x 2     Preshifted player
 
+Blank equ ($-WTile)/Sprites.BTileLen
+import_bin "..\tiles\blank.wtile"                       ; 008-008        1 x 1     Blank
+
+pend
 
 MenuText                proc                            ; Named procedure to keep our print data tidy
                         db At, 7, 13                    ; These codes are the same as you would use
