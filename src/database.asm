@@ -17,7 +17,7 @@ WTile proc
 ;                                                           BTile         Best
 ;          FileName                                       Indices    Viewed As     Notes
 Monster equ ($-WTile)/Sprites.BTileLen
-import_bin "..\tiles\monster.wtile"                     ; 000-007        4 x 2     Preshifted player
+import_bin "..\tiles\blagger.wtile"                     ; 000-007        4 x 2     Preshifted player
 
 Blank equ ($-WTile)/Sprites.BTileLen
 import_bin "..\tiles\blank.wtile"                       ; 008-008        1 x 1     Blank
