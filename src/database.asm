@@ -1,7 +1,5 @@
 ; database.asm
 
-
-
 BTile proc
 ::TILE_IMAGES:
 ::TileImages:

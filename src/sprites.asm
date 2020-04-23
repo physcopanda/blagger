@@ -7,13 +7,16 @@ AnimateDemo             proc
                         ld a, (FRAMES)                  ; Read the LSB of the ROM frame counter (0.255)
                         and %00000111                   ; Take the lowest 3 bits (effectively FRAMES modulus 8),
                         ret nz                          ;   and return 7 out of every 8 frames.
-                        ; no static animation currently - @todo
-                        ret
+                        ret                             ; no static animation currently - @todo
 pend
 
 
 
 MovePlayer              proc
+
+                        ld a, (FRAMES)                  ; Read the LSB of the ROM frame counter (0.255)
+                        and %00000011                   ; Take the lowest 3 bits (effectively FRAMES modulus 8),
+                        ret nz                          ;   and return 7 out of every 8 frames.
 
                         ld de, 0                        ; d (vertical) and e (horizontal) will hold -2/0/+2 movement offsets
                         ld bc, zeuskeyaddr("OP")        ; Get the I/O port address for O (left) and P (right)
@@ -21,8 +24,8 @@ MovePlayer              proc
                         ld b, a                         ; Save value for Right check
                         and zeuskeymask("O")            ; Mask out everything but O
                         jp nz, Right                    ; If result is non-zero O was not pressed, so check Left key
-                        ; player faces left
-                        ld a, 4
+
+                        ld a, 4                         ; player faces left
                         ld (MovePlayer.AnimOffset), a
 
                         ld e, -2                        ; otherwise set horizontal offset to -2
@@ -31,8 +34,8 @@ Right:
                         ld a, b                         ; Retrieve Left/Right keypress reading
                         and zeuskeymask("P")            ; Mask out everything but P
                         jp nz, Up                       ; If result is non-zero P was not pressed, so check Up key
-                        ; player face right
-                        ld a, 0
+
+                        ld a, 0                         ; player face right
                         ld (MovePlayer.AnimOffset), a
 
                         ld e, +2                        ; otherwise set horizontal offset to +2
