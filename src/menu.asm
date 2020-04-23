@@ -18,10 +18,14 @@ pend
 
 SetupGame               proc
                         call ClsAttr                    ; Clear the 8x2 attributes for a fast CLS before setup
-                        ld a, BTile.NirvanaDemo         ; BTile.NirvanaDemo is 0 - the index of the first tile in the set
+                        ld a, WTile.Monster             ; WTile.Monster is 0 - the index of the first tile in the set
+                        ld (Sprites.BIndex), a          ; Set NIRVANA+ sprite B to this sprite index
+                        ld a, WTile.Blank               ; WTile.Blank is 12 - the index of the blank tile
                         ld (Sprites.AIndex), a          ; Set NIRVANA+ sprite A to this sprite index
-                        ld hl, $1000                    ; LSB is $00 (the column), MSB is $10 (the line, decimal 16)
-                        ld (Sprites.AColumn), hl        ; Set NIRVANA+ sprite A coords to 0, 16
+                        ld a, 120                       ; 120 is the dead center in the horizontal axis
+                        ld (MovePlayer.X), a            ; Set the playing horizontal starting position
+                        ld a, 96                        ; 96 is the dead center in the vertical axis
+                        ld (MovePlayer.Y), a            ; Set the playing vertical starting position
                         call NIRVANA_start              ; Enable NIRVANA+
                         ret
 pend
