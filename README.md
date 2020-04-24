@@ -31,6 +31,7 @@ You can see each attribute cell outlined. These can have one foreground colour a
 Next stop - back to the tutorials. My Z80 is painfully slow at the moment as I don't know the opcodes. I need a 6502 to Z80 cheat sheet!
 
 The question is boots or no boots?
+
 ![boots or no boots](/resources/images/blagger_sprites_boots_or_no.gif)
 
 
