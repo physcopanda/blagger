@@ -18,6 +18,18 @@ Using the [Zalaxa tutorials](https://seven-fff.com/blog/) to learn how to use th
 
 I've written this as a series of blog type articles for future use on our website.
 
+## Part 2 - Roger the Dodger
+*23rd April 2020
+After some messing about I managed to get Roger walking about on my Spectrum Next! He had to lose his red swag bag as I'm using basically character graphics to make him walk. So there's 4 frames in each direction with these wide tiles allowing him to move 2 pixels per frame ready for drawing 8 pixels forward.
+
+Here he is being edited in [ZX Paintbrush](https://sourcesolutions.itch.io/zx-paintbrush)
+![Roger the Dodger](/resources/images/blagger_zxpaintbrush.png)
+
+You can see each attribute cell outlined. These can have one foreground colour and one background; hence the reason Roger had to lose the red bag. Too much colour corruption would have to have taken place over his body and head to keep it. Not sure about the blue boots yet either. Basically the Nirvana(+) engine gives you fantastic control of colour splits vertically of the spectrums colour cells but horizontally its the same.
+
+Next stop - back to the tutorials. My Z80 is painfully slow at the moment as I don't know the opcodes. I need a 6502 to Z80 cheat sheet!
+
+
 ## Part 1 - Blagging It!
 *22nd April 2020*
 
