@@ -13,6 +13,15 @@ pend
 
 
 MovePlayer              proc
+                        ld bc, zeuskeyaddr(" ")
+                        in a, (c)
+                        and zeuskeymask(" ")
+                        ld b, Black
+                        jp nz, SetBorder
+                        ld b, Red
+SetBorder:
+                        ld a, b
+                        out (ULAPort), a
 
                         ld a, (FRAMES)                  ; Read the LSB of the ROM frame counter (0.255)
                         and %00000011                   ; Take the lowest 3 bits (effectively FRAMES modulus 8),

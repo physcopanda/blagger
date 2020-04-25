@@ -18,7 +18,18 @@ Using the [Zalaxa tutorials](https://seven-fff.com/blog/) to learn how to use th
 
 I've written this as a series of blog type articles for future use on our website.
 
-## Part 2 - Roger the Dodger
+## 3 - Font Fun
+*25th Aptil 2020*
+
+For future reference Blagger levels are 24 x 18 tiles. These are 8 pixel square - so not quite sure yet how this will translate to the Nirvana engine!
+
+Today, I re-pixelled the original Snatcher font using FZX font editor.
+
+It took a few hours so not much else happened - but here's an idea of how the font looks!
+![Snatcher Font](/resources/images/fonts.png)
+
+
+## 2 - Roger the Dodger
 *23rd April 2020*
 
 After some messing about I managed to get Roger walking about on my Spectrum Next! He had to lose his red swag bag as I'm using basically character graphics to make him walk. So there's 4 frames in each direction with these wide tiles allowing him to move 2 pixels per frame ready for drawing 8 pixels forward.
@@ -35,7 +46,7 @@ The question is boots or no boots?
 ![boots or no boots](/resources/images/blagger_sprites_boots_or_no.gif)
 
 
-## Part 1 - Blagging It!
+## 1 - Blagging It!
 *22nd April 2020*
 
 Learning the tools

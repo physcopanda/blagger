@@ -4,7 +4,13 @@
 
 SetupMenu               proc
                         call ClsAttr                    ; Call another named procedure to do a fast CLS (like GOSUB)
-                        Print(MenuText, MenuText.Length); Print text on the screen using ROM routines
+                        Print(MenuText, MenuText.Length); Print attributes on the screen using ROM routines
+
+                        ld hl, Font.Snatcher            ; Set FZX font
+                        ld (FZX_FONT), hl
+                        ld hl, MenuText.FZX             ; Start of menu ASCII data
+                        PrintTextHL()                   ; Macro to print FZX proportional text with FZX
+
 WaitForSpace:                                           ; All labels inside procedures are local to that procedure
                         halt                            ; Wait for the next 1/50th second interrupt (like PAUSE 1)
                         ld bc, zeuskeyaddr(" ")         ; Get the IO address to input
@@ -26,6 +32,10 @@ SetupGame               proc
                         ld (MovePlayer.X), a            ; Set the playing horizontal starting position
                         ld a, 96                        ; 96 is the dead center in the vertical axis
                         ld (MovePlayer.Y), a            ; Set the playing vertical starting position
+
+                        ld hl, GameText                 ; Start of menu ASCII data
+                        PrintTextHL()                   ; Macro to print FZX proportional text with FZX
+
                         call NIRVANA_start              ; Enable NIRVANA+
                         ret
 pend

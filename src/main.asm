@@ -31,6 +31,7 @@ include                 "utilities.asm"
 include                 "database.asm"
 include                 "constants.asm"
 include                 "macros.asm"
+include                 "FZXdriver.asm"
 include                 "nirvana+.asm"
 
 
