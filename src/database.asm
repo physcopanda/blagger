@@ -4,10 +4,10 @@ WTile proc
 ::WIDE_IMAGES:
 ;                                                           BTile         Best
 ;          FileName                                       Indices    Viewed As     Notes
-Monster equ ($-WTile)/Sprites.BTileLen
+Roger equ ($-WTile)/Sprites.WTileLen
 import_bin "..\tiles\blagger.wtile"                     ; 000-007        4 x 2     Preshifted player
 
-Blank equ ($-WTile)/Sprites.BTileLen
+Blank equ ($-WTile)/Sprites.WTileLen
 import_bin "..\tiles\blank.wtile"                       ; 008-008        1 x 1     Blank
 
 pend

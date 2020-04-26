@@ -112,7 +112,7 @@ CalculatePlayerX        proc                            ; X coordinate is passed
                         ld a, b                         ; Get the X coordinate back
                         and %00000110                   ; Get the remainder after rounding it to the nearest eight
                         rra                             ;   then divide that by two to get the tile index (0/2/4/6)/
-                        add a, WTile.Monster            ; Tile index is returned in a
+                        add a, WTile.Roger              ; Tile index is returned in a
                         ret
 pend
 

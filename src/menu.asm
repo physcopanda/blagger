@@ -24,7 +24,7 @@ pend
 
 SetupGame               proc
                         call ClsAttr                    ; Clear the 8x2 attributes for a fast CLS before setup
-                        ld a, WTile.Monster             ; WTile.Monster is 0 - the index of the first tile in the set
+                        ld a, WTile.Roger             ; WTile.Monster is 0 - the index of the first tile in the set
                         ld (Sprites.BIndex), a          ; Set NIRVANA+ sprite B to this sprite index
                         ld a, WTile.Blank               ; WTile.Blank is 12 - the index of the blank tile
                         ld (Sprites.AIndex), a          ; Set NIRVANA+ sprite A to this sprite index

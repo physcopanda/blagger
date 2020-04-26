@@ -29,3 +29,18 @@ PrintMenu:              ld a, (hl)                      ; for each character of 
                         jp PrintMenu
 Next:                                                   ; This will be whatever code follows the macro
 mend
+
+ClsAttrLine             macro(Line, Colour)
+                        if Colour = DimBlackBlackP
+                         xor a
+                        else
+                          ld a, Colour
+                        endif
+                        ld hl, AttributeAddress+(Line*32)
+                        ld (hl), a
+                        ld de, AttributeAddress+(Line*32)+1
+                        ld bc, 32
+                        ldir
+mend
+
+
