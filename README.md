@@ -26,6 +26,7 @@ For future reference Blagger levels are 24 x 18 tiles. These are 8 pixel square 
 Today, I re-pixelled the original Snatcher font using FZX font editor.
 
 It took a few hours so not much else happened - but here's an idea of how the font looks!
+
 ![Snatcher Font](/resources/images/fonts.png)
 
 

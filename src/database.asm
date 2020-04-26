@@ -89,26 +89,39 @@ MenuText                proc                            ; Named procedure to kee
                         db At, 18, 1                    ; These codes are the same as you would use
                         db Paper, Black, PrBright, 1    ;   with Sinclair BASIC's PRINT command
                         db Ink, Yellow, "                    "                ; Set the attributes here, with spaces,
-                        db At, 19, 1                    ; These codes are the same as you would use
-                        db Paper, Black, PrBright, 1    ;   with Sinclair BASIC's PRINT command
-                        db Ink, Cyan, "    "                ; Set the attributes here, with spaces,
-                        db At, 20, 1                    ; These codes are the same as you would use
-                        db Paper, Black, PrBright, 1    ;   with Sinclair BASIC's PRINT command
-                        db Ink, Yellow,"    "                ; Set the attributes here, with spaces,
-                        db At, 21, 1                    ; These codes are the same as you would\
-                        db Ink, White, "     "                ; Set the attributes here, with spaces,
-                        db At, 21, 6                    ; These codes are the same as you would use
-                        db Paper, Black, PrBright, 1    ;   with Sinclair BASIC's PRINT command
-                        db Ink, White, "     "                ; Set the attributes here, with spaces,
-                        db At, 21, 12                    ; These codes are the same as you would use
+                        db At, 19, 7                    ; These codes are the same as you would use
                         db Paper, Black, PrBright, 1    ;   with Sinclair BASIC's PRINT command
                         db Ink, Yellow, "     "                ; Set the attributes here, with spaces,
+                        db At, 20, 7                    ; These codes are the same as you would use
+                        db Paper, Black, PrBright, 1    ;   with Sinclair BASIC's PRINT command
+                        db Ink, Yellow,"     "                ; Set the attributes here, with spaces,
+                        db At, 21, 7                    ; These codes are the same as you would
+                        db Paper, Black, PrBright, 1    ;   with Sinclair BASIC's PRINT command
+                        db Ink, Yellow, "     "                ; Set the attributes here, with spaces,
+                        db At, 19, 12                    ; These codes are the same as you would use
+                        db Paper, Black, PrBright, 1    ;   with Sinclair BASIC's PRINT command
+                        db Ink, White, "     "                ; Set the attributes here, with spaces,
+                        db At, 20, 12                    ; These codes are the same as you would use
+                        db Paper, Black, PrBright, 1    ;   with Sinclair BASIC's PRINT command
+                        db Ink, White,"     "                ; Set the attributes here, with spaces,
+                        db At, 21, 12                    ; These codes are the same as you would use
+                        db Paper, Black, PrBright, 1    ;   with Sinclair BASIC's PRINT command
+                        db Ink, White, "        "                ; Set the attributes here, with spaces,
+                        db At, 19, 17                    ; These codes are the same as you would use
+                        db Paper, Black, PrBright, 1    ;   with Sinclair BASIC's PRINT command
+                        db Ink, Yellow, "        "                ; Set the attributes here, with spaces,
+                        db At, 20, 17                    ; These codes are the same as you would use
+                        db Paper, Black, PrBright, 1    ;   with Sinclair BASIC's PRINT command
+                        db Ink, Yellow,"        "                ; Set the attributes here, with spaces,
+                        db At, 21, 17                    ; These codes are the same as you would use
+                        db Paper, Black, PrBright, 1    ;   with Sinclair BASIC's PRINT command
+                        db Ink, Yellow, "        "                ; Set the attributes here, with spaces,
 
 
 
 Length                  equ $-MenuText                  ; Let Zeus do the work of calculating the length
                                                         ; ($ means the current address Zeus is assembling to)
-FZX:                    db At, 8, 100                  ; FXX coordinates are (Y, X) in pixels
+FZX:                    db At, 6, 108                  ; FXX coordinates are (Y, X) in pixels
                         db "Blagger"
                         db At, 30, 10
                         db "Roger the Dodger is back! Our master"
@@ -120,10 +133,10 @@ FZX:                    db At, 8, 100                  ; FXX coordinates are (Y,
                         db "one last job! Crack every safe and"
                         db At, 126, 10
                         db "bring home the bacon!"
-                        db At, 150, 60
+                        db At, 154, 60
                         db "Press SPACE to play"
                         db 255                          ; Terminator byte
-pend                              ; ($ means the current address Zeus is assembling to)
+pend
 
 GameText                proc                            ; FXX coordinates are (Y, X) in pixels
                         db At, 0, 0, "1UP"
